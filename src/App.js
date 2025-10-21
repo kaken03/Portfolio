@@ -12,7 +12,7 @@ function Landing({ onViewWork }) {
       <img src={profile} className="landing-profile" alt="Kent Villahermosa" />
       <h1>Hi, I’m <span>Kent Ezekiel R. Villahermosa</span></h1>
       <p className="tagline">
-        I build responsive and user-friendly web apps using React, Node.js, and Firebase.
+        I build responsive and user-friendly web apps.
       </p>
       <div className="landing-buttons">
         <button className="btn btn-outline" onClick={onViewWork}>View My Work</button>
@@ -39,13 +39,14 @@ function App() {
 
         {/* Landing Page Section */}
         <Landing onViewWork={handleViewWork} />
-        {/* About Section */}
-        <section id="about" ref={aboutsRef}>
-          <About />
-        </section>
+        
         {/* Projects Section */}
         <section id="projects" ref={projectsRef}>
           <Projects />
+          {/* About Section */}
+        <section id="about" ref={aboutsRef}>
+          <About />
+        </section>
         </section>
         {/* Contact Section */}
         <section id="contact" ref={contactRef}>
